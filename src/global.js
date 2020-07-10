@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center;
     background: ${({ theme }) => theme.primaryDark};
     color: ${({ theme }) => theme.primaryLight};
-    height: 100vh;
+    min-height: 100vh;
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   img {
     border-radius: 5px;
     height: auto;
-    width: 10rem;
+    width: 15rem;
   }
   div {
     text-align: center;
@@ -37,6 +37,9 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
+  }
+  section {
+    padding: 1rem;
   }
 `;
 

@@ -4,7 +4,6 @@ import { bool, func } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 
 const Menu = ({ open, toggleOpen }) => {
-
   return (
     <StyledMenu open={open}>
       <Link to="/" onClick={toggleOpen}>
@@ -25,7 +24,7 @@ const Menu = ({ open, toggleOpen }) => {
         About us
         </Link>
     </StyledMenu>
-  )
+  );
 }
 
 Menu.propTypes ={

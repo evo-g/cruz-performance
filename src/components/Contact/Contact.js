@@ -9,5 +9,5 @@ export default function Contact() {
       <h2>Or Text</h2>
       <a href="sms:+16194024165">Click here to text us!</a>
     </StyledContact>
-  )
+  );
 }
