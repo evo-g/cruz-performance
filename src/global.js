@@ -41,6 +41,12 @@ export const GlobalStyles = createGlobalStyle`
   section {
     padding: 1rem;
   }
+  .home-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 // alt body
