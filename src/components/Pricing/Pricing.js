@@ -10,4 +10,4 @@ export default function Pricing() {
       <a href="sms:+16194024165">Click here to text us!</a>
     </StyledPricing>
   );
-}
+};

@@ -6,8 +6,10 @@ export const StyledAbout = styled.section`
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .insta-logo img {
     width: 4rem;
   }
-`
+`;
