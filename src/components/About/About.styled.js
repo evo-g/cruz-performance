@@ -12,4 +12,4 @@ export const StyledAbout = styled.section`
   .insta-logo img {
     width: 4rem;
   }
-`;
+`
