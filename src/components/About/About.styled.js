@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
+  margin: 1rem 0 5rem;
   min-height: 100vh;
   .about-container {
     margin-top: 5rem;
@@ -12,4 +13,4 @@ export const StyledAbout = styled.section`
   .insta-logo img {
     width: 4rem;
   }
-`;
+`
