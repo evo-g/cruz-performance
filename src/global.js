@@ -27,9 +27,8 @@ export const GlobalStyles = createGlobalStyle`
     text-transform: uppercase;
   }
   img {
-    border-radius: 5px;
-    height: auto;
     width: 15rem;
+    hieght: auto;
   }
   div {
     text-align: center;

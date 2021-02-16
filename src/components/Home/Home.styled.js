@@ -6,6 +6,8 @@ export const StyledHome = styled.section`
   .logo {
     img {
       margin: 10px;
+      width: 15rem;
+      height: auto;
     }
   }
   .content {
@@ -33,7 +35,7 @@ export const StyledHome = styled.section`
     flex-direction: row;
     flex: 1;
     z-index: 5;
-    filter: drop-shadow(3px 6px 9px #636161);
+    filter: drop-shadow(1px 3px 6px #636161);
     img {
       margin: 10px;
     }
@@ -42,20 +44,11 @@ export const StyledHome = styled.section`
     .row {
       flex-direction: column;
     }
-    .brands img {
-      max-width: 7rem;
-    }
-  }
-  @media ${device.mobileM} {
-    .brands img {
-      max-width: 8rem;
-    }
   }
   @media ${device.mobileL} {
     .brands img {
       max-width: 10rem;
     }
-
   }
   @media ${device.tablet} {
     .row {
