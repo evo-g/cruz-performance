@@ -29,6 +29,7 @@ export const GlobalStyles = createGlobalStyle`
   img {
     width: 15rem;
     hieght: auto;
+    max-height: 12rem;
   }
   div {
     text-align: center;
