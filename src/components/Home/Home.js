@@ -15,9 +15,17 @@ export default function Home() {
         <img src={ColorLogo} loading='lazy' alt="cruz perfromance logo" />
       </div>
       <div className='content'>
-        <h3>Ford Powerstroke Diesel Specialist</h3>
-        <h3>Specializing in (7.3, 6.0, 6.4, 6.7 engine repairs)</h3>
-        <h3><strong>XDP</strong> Authorized Dealer</h3>
+        <div className='row'>
+          <article>
+            <h3>Ford Powerstroke Diesel Specialist</h3>
+            <h3>Specializing in (7.3, 6.0, 6.4, 6.7 engine repairs)</h3>
+            <p>With over 18 years of Diesel experience</p>
+          </article>
+          <article>
+            <h3>Your perfromance needs covered</h3>
+            <p><strong>XDP</strong> Authorized Dealer</p>
+          </article>
+        </div>
         <div className='brands'>
           <img src={Powerstroke} alt="ford powerstroke logo" />
           <img src={Flag} alt="american flag" />

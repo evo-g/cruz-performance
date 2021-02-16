@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+// import { device } from './theme';
 
 export const GlobalStyles = createGlobalStyle`
   html, body {
@@ -40,4 +41,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
   }
+
+
 `;

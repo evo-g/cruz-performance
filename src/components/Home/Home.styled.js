@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../theme';
 
 export const StyledHome = styled.section`
   margin: 1rem 0 5rem;
@@ -20,6 +21,10 @@ export const StyledHome = styled.section`
       color: ${({ theme }) => theme.primaryHeading};
     }
   }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
   .brands {
     padding: 1rem;
     display: flex;
@@ -32,5 +37,31 @@ export const StyledHome = styled.section`
     img {
       margin: 10px;
     }
+  }
+  @media ${device.mobileS} {
+    .row {
+      flex-direction: column;
+    }
+    .brands img {
+      max-width: 7rem;
+    }
+  }
+  @media ${device.mobileM} {
+    .brands img {
+      max-width: 8rem;
+    }
+  }
+  @media ${device.mobileL} {
+    .brands img {
+      max-width: 10rem;
+    }
+
+  }
+  @media ${device.tablet} {
+    .row {
+      flex-direction: row;
+    }
+    .brands img 
+      max-width: 13rem;
   }
 `;

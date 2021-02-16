@@ -3,7 +3,7 @@ import IGGrid from '../IGGrid';
 import { StyledAbout } from './About.styled'
 import Xdp from '../../images/xdp.png';
 import Powerstroke from '../../images/powerstroke.png';
-import Truck from '../../images/truck.png';
+import Truck from '../../images/truck-removebg.png';
 import Insta from '../../images/insta-logo.png';
 
 export default function About() {
