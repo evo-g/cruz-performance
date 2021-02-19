@@ -11,6 +11,7 @@ export const StyledHome = styled.section`
     }
   }
   .content {
+    max-width: 900px;
     margin: 0 1rem;
     background-color: #EFEFEF;
     border-radius: .3rem;

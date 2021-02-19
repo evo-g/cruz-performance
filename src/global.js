@@ -29,7 +29,7 @@ export const GlobalStyles = createGlobalStyle`
   img {
     width: 15rem;
     hieght: auto;
-    max-height: 12rem;
+    max-height: 15rem;
   }
   div {
     text-align: center;
@@ -41,6 +41,4 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
   }
-
-
 `;
