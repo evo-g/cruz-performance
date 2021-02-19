@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledIGGrid = styled.div`
+  margin: 1rem 0;
   ul {
     display: flex;
     flex-wrap: wrap;

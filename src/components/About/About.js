@@ -13,7 +13,7 @@ export default function About() {
       <div className='about-container'>
         <h3>Ford Powerstroke Diesel Specialist</h3>
           <img src={Powerstroke} alt='powerstroke' />
-          <img src={Truck} alt='truck' />
+          <img id='truck' src={Truck} alt='truck' />
         <h4>Specializing in (7.3, 6.0, 6.4, 6.7 engine repairs)</h4>
         <p><strong>XDP</strong> Authorized Dealer</p>
           <img src={Xdp} alt='xdp logo' />
