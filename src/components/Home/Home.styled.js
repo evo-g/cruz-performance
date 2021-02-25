@@ -32,13 +32,16 @@ export const StyledHome = styled.section`
     padding: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    flex: 1;
     z-index: 5;
     filter: drop-shadow(1px 3px 6px #636161);
     img {
       margin: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   @media ${device.mobileS} {
@@ -55,7 +58,5 @@ export const StyledHome = styled.section`
     .row {
       flex-direction: row;
     }
-    .brands img 
-      max-width: 13rem;
   }
 `;

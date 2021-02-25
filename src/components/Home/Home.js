@@ -30,8 +30,8 @@ export default function Home() {
           <img src={Powerstroke} alt="ford powerstroke logo" />
           <img src={Flag} alt="american flag" />
           <img src={Xdp} alt="xdp log" />
-          <img src={ArpLogo} alt="arp logo" />
           <img src={Mishimoto} alt="mishimoto logo" />
+          <img src={ArpLogo} alt="arp logo" />
         </div>
       </div>
       <IGGrid />
