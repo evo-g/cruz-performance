@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledHome } from './Home.styled';
+import { motion } from 'framer-motion';
 import IGGrid from '../IGGrid';
 import Flag from '../../images/flag.png';
 import Xdp from '../../images/xdp.png'
@@ -14,7 +15,12 @@ export default function Home() {
       <div className="logo">
         <img src={ColorLogo} loading='lazy' alt="cruz perfromance logo" />
       </div>
-      <div className='content'>
+      <motion.div
+        className='content'
+        animate={{ scale: .95 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         <div className='row'>
           <article>
             <h3>Ford Powerstroke Diesel Specialist</h3>
@@ -33,7 +39,7 @@ export default function Home() {
           <img src={Mishimoto} alt="mishimoto logo" />
           <img src={ArpLogo} alt="arp logo" />
         </div>
-      </div>
+      </motion.div>
       <IGGrid />
     </StyledHome>
   )
