@@ -42,8 +42,9 @@ function IGGrid() {
       <motion.li 
         key={photo.url}
         animate={{ scale: .95 }}
-        whileHover={{ scale: 1.1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
+        whileHover={{ scale: 1.05 }}
+        transition={{ ease: "easeOut", duration: 1 }}
+        whileTap={{ scale: 0.9 }}
       >
         <a href={photo.url} target='_blank'>
           <img src={photo.displayUrl} alt={photo.caption} />

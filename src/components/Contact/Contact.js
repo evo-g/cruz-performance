@@ -8,8 +8,7 @@ export default function Contact() {
       <motion.div 
         className='content'
         animate={{ scale: .95 }}
-        whileHover={{ scale: 1.1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
+        transition={{ ease: "easeIn", duration: 2 }}
       >
         <h2>For pricing and more information</h2>
         <a href="tel:6194024165">Call at 619-402-4165</a>

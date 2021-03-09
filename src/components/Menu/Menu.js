@@ -8,8 +8,8 @@ const Menu = ({ open, toggleOpen }) => {
   return (
     <StyledMenu open={open}>
       <Link to="/" onClick={toggleOpen}>
-        <span id='menu-logo' role="img" aria-label="contact">
-          <img src={Logo} alt='cruz-logo' />
+        <span  role="img" aria-label="contact">
+          <img id='menu-logo' src={Logo} alt='cruz-logo' />
         </span>
       </Link>
       <Link to="/contact" onClick={toggleOpen}>

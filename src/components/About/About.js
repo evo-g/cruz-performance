@@ -14,17 +14,22 @@ export default function About() {
       <motion.div
         className='about-container'
         animate={{ scale: .95 }}
-        whileHover={{ scale: 1.05 }}
-        transition={{ ease: "easeOut", duration: 2 }}
+        transition={{ ease: "easeIn", duration: 2 }}
       >
         <div className='heading'>
           <h1><img src={Powerstroke} alt='powerstroke' /></h1>
           <h2>Specialist</h2>
         </div>
-        <img id='truck' src={Truck} alt='truck' />
-        <h4>Specializing in (7.3, 6.0, 6.4, 6.7 engine repairs)</h4>
-        <p><strong>XDP</strong> Authorized Dealer</p>
-        <img src={Xdp} alt='xdp logo' />
+        <div className='row'>
+          <article>
+            <img id='truck' src={Truck} alt='truck' />
+            <h4>Specializing in (7.3, 6.0, 6.4, 6.7 engine repairs)</h4>
+          </article>
+          <article>
+            <img src={Xdp} alt='xdp logo' />
+            <p><strong>XDP</strong> Authorized Dealer</p>
+          </article>
+        </div>
       </motion.div>
         <h2>Check us out on instagram</h2>
         <a className='insta-logo' href='https://www.instagram.com/_cruzperformance_/' target='_blank' alt='instagram page'>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../theme';
 
 export const StyledAbout = styled.section`
   padding: 1rem;
@@ -23,6 +24,17 @@ export const StyledAbout = styled.section`
       margin-top: 0
     }
   }
+  .row {
+    display: flex;
+    flex-direction: row;
+    article {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   .insta-logo img {
     width: 4rem;
   }
@@ -30,5 +42,10 @@ export const StyledAbout = styled.section`
     width: auto;
     height: auto;
     object-fit: cover;
+  }
+  @media ${device.mobileL} {
+    .row {
+      flex-direction: column;
+    }
   }
 `

@@ -27,8 +27,8 @@ export const GlobalStyles = createGlobalStyle`
     text-transform: uppercase;
   }
   img {
-    width: 15rem;
-    hieght: auto;
+    max-width: 15rem;
+    height: auto;
     max-height: 15rem;
   }
   div {
@@ -40,5 +40,11 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
+  }
+  a:hover {
+    color: ${({ theme }) => theme.primaryLight};
+  }
+  a:visited {
+    color: ${({ theme }) => theme.primaryTitle};
   }
 `;

@@ -2,12 +2,8 @@ import React from 'react';
 import { StyledHome } from './Home.styled';
 import { motion } from 'framer-motion';
 import IGGrid from '../IGGrid';
-import Flag from '../../images/flag.png';
-import Xdp from '../../images/xdp.png'
 import ColorLogo from '../../images/color-logo.png';
-import ArpLogo from '../../images/arplogo.png';
-import Powerstroke from '../../images/powerstroke.png';
-import Mishimoto from '../../images/mishimoto.png';
+import { logos } from '../../data';
 
 export default function Home() {
   return (
@@ -18,8 +14,7 @@ export default function Home() {
       <motion.div
         className='content'
         animate={{ scale: .95 }}
-        whileHover={{ scale: 1.1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
+        transition={{ ease: "easeIn", duration: 2 }}
       >
         <div className='row'>
           <article>
@@ -33,11 +28,16 @@ export default function Home() {
           </article>
         </div>
         <div className='brands'>
-          <img src={Powerstroke} alt="ford powerstroke logo" />
-          <img src={Flag} alt="american flag" />
-          <img src={Xdp} alt="xdp log" />
-          <img src={Mishimoto} alt="mishimoto logo" />
-          <img src={ArpLogo} alt="arp logo" />
+          {
+            logos.map(item => (
+              <img 
+                key={item.id}
+                src={item.img}
+                alt={item.alt}
+                loading="lazy"
+              />
+            ))
+          }
         </div>
       </motion.div>
       <IGGrid />
