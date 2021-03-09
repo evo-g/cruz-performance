@@ -37,9 +37,15 @@ export const StyledMenu = styled.nav`
       color: ${({ theme }) => theme.primaryTitle};
     }
   }
-  #menu-logo,img  {
+  #menu-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 12rem;
+    margin: 0 auto;
+  }
+  #menu-logo:hover {
+    transition: color 2s linear;
+    transform: scale(1.05)
   }
 `;

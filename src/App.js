@@ -2,26 +2,25 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './global';
 import { theme } from './theme';
-import { NavBar, Contact, Home, About, Pricing } from './components';
+import { NavBar, Contact, Home, About, Pricing, Default } from './components';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <ThemeProvider theme={theme}>
-          <React.Fragment>
+      <ThemeProvider theme={theme}>
+        <Switch>
+          <>
             <GlobalStyles />
             <NavBar />
-            <div>
-              <Route exact path ='/' component={Home} />
-              <Route path='/contact' component={Contact} />
-              <Route path='/about' component={About} />
-              <Route path='/pricing' component={Pricing} />
-            </div>
-          </React.Fragment>
-        </ThemeProvider>
-      </Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/about' component={About} />
+            <Route path='/pricing' component={Pricing} />
+            <Route path='*' component={Default} />
+          </>
+        </Switch>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

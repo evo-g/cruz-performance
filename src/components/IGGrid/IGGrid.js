@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
+import { motion } from 'framer-motion';
 import { StyledIGGrid } from './IGGrid.styled';
 import axios from 'axios';
 
@@ -38,11 +39,17 @@ function IGGrid() {
 
   if (gram !== null || gram !== undefined) {
     result = useMemo(() => gram.map(photo => (
-      <li key={photo.url}>
+      <motion.li 
+        key={photo.url}
+        animate={{ scale: .95 }}
+        whileHover={{ scale: 1.05 }}
+        transition={{ ease: "easeOut", duration: 1 }}
+        whileTap={{ scale: 0.9 }}
+      >
         <a href={photo.url} target='_blank'>
           <img src={photo.displayUrl} alt={photo.caption} />
         </a>
-      </li>
+      </motion.li>
     )), [gram]);
   }
 

@@ -27,6 +27,7 @@ export const StyledHome = styled.section`
   .row {
     display: flex;
     flex-direction: row;
+    padding: 1rem;
   }
   .brands {
     padding: 1rem;
@@ -44,19 +45,13 @@ export const StyledHome = styled.section`
       object-fit: cover;
     }
   }
-  @media ${device.mobileS} {
+  @media ${device.mobileL} {
     .row {
       flex-direction: column;
+
     }
-  }
-  @media ${device.mobileL} {
     .brands img {
-      max-width: 10rem;
-    }
-  }
-  @media ${device.tablet} {
-    .row {
-      flex-direction: row;
+      max-width: 12rem;
     }
   }
 `;
