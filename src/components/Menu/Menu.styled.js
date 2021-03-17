@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../theme';
 
 export const StyledMenu = styled.nav`
   display: flex;
@@ -18,6 +19,7 @@ export const StyledMenu = styled.nav`
     width: 100%;
   }
 
+  
   a {
     font-size: 2rem;
     text-transform: uppercase;
@@ -32,7 +34,7 @@ export const StyledMenu = styled.nav`
       font-size: 1.5rem;
       text-align: center;
     }
-
+    
     &:hover {
       color: ${({ theme }) => theme.primaryTitle};
     }
@@ -47,5 +49,12 @@ export const StyledMenu = styled.nav`
   #menu-logo:hover {
     transition: color 2s linear;
     transform: scale(1.05)
+  }
+
+  @media ${device.laptopL} {
+    justify-content: start;
+    #menu-logo {
+      margin: 2rem auto 0;
+    }
   }
 `;

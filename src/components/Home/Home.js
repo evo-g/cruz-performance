@@ -40,7 +40,7 @@ export default function Home() {
           }
         </div>
       </motion.div>
-      <IGGrid />
+      {/* <IGGrid /> */}
     </StyledHome>
   )
 };

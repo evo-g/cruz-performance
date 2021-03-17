@@ -31,4 +31,3 @@ export const logos = [
     img: ArpLogo,
   },
 ];
-

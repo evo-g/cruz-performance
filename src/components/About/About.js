@@ -5,7 +5,6 @@ import { StyledAbout } from './About.styled'
 import Xdp from '../../images/xdp.png';
 import Powerstroke from '../../images/powerstroke.png';
 import Truck from '../../images/truck-removebg.png';
-import Insta from '../../images/insta-logo.png';
 
 export default function About() {
 
@@ -20,7 +19,7 @@ export default function About() {
           <h1><img src={Powerstroke} alt='powerstroke' /></h1>
           <h2>Specialist</h2>
         </div>
-        <div className='row'>
+        <div className='column'>
           <article>
             <img id='truck' src={Truck} alt='truck' />
             <h4>Specializing in (7.3, 6.0, 6.4, 6.7 engine repairs)</h4>
@@ -33,10 +32,10 @@ export default function About() {
       </motion.div>
         <h2>Check us out on instagram</h2>
         <a className='insta-logo' href='https://www.instagram.com/_cruzperformance_/' target='_blank' alt='instagram page'>
-          <img src={Insta} alt='insta-logo' />
+          <motion.i whileHover={{ scale: 1.1 }} transition={{ ease: "easeOut", duration: 2 }}  className="fab fa-instagram"></motion.i>
         </a>
-        <h3>Our Latest Posts</h3>
-      <IGGrid />
+        <h3>To See Our Latest Posts</h3>
+      {/* <IGGrid /> */}
     </StyledAbout>
   )
 };
