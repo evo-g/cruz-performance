@@ -20,7 +20,7 @@ const Default = (props) => {
   }
   return (
     <DefaultStyled>
-      <h1>Sorry cannot find this page</h1>
+      <h2>Sorry cannot find this page</h2>
       <img src={Truck} alt='confused funny face' />
       <Link to='/'>Return Home</Link>
     </DefaultStyled>

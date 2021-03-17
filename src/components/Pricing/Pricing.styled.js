@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../../theme';
+import { device, theme } from '../../theme';
 
 export const StyledPricing = styled.section`
   padding: 1rem;
@@ -7,7 +7,7 @@ export const StyledPricing = styled.section`
   width: 100vw;
   min-height: 100vh;
   a {
-    color: #ffa600;
+    color: ${theme.primaryA};
   }
   .content {
     max-width: 900px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledHome } from './Home.styled';
-import { motion } from 'framer-motion';
-import IGGrid from '../IGGrid';
+// import { motion } from 'framer-motion';
+// import IGGrid from '../IGGrid';
 import ColorLogo from '../../images/color-logo.png';
 import { logos } from '../../data';
 
@@ -11,26 +11,30 @@ export default function Home() {
       <div className="logo">
         <img src={ColorLogo} loading='lazy' alt="cruz perfromance logo" />
       </div>
-      <motion.div
+      <div
         className='content'
-        animate={{ scale: .95 }}
-        transition={{ ease: "easeIn", duration: 2 }}
+      // animate={{ scale: .95 }}
+      // transition={{ ease: "easeIn", duration: 2 }}
       >
+        <h3>Ford Powerstroke Diesel Specialist</h3>
         <div className='row'>
           <article>
-            <h3>Ford Powerstroke Diesel Specialist</h3>
             <h3>Specializing in (7.3, 6.0, 6.4, 6.7 engine repairs)</h3>
-            <p>With over 18 years of Diesel experience</p>
+            <p>With over 18 years of Diesel experience. The place to take your truck first, and get it done right the first time! Or the final stop after the other guys couldn't fix it.</p>
           </article>
           <article>
             <h3>Your perfromance needs covered</h3>
-            <p><strong>XDP</strong> Authorized Dealer</p>
+            <ul>
+              <li><strong>XDP</strong> Authorized Dealer</li>
+              <li>ARP</li>
+              <li>Misimoto</li>
+            </ul>
           </article>
         </div>
         <div className='brands'>
           {
             logos.map(item => (
-              <img 
+              <img
                 key={item.id}
                 src={item.img}
                 alt={item.alt}
@@ -39,7 +43,7 @@ export default function Home() {
             ))
           }
         </div>
-      </motion.div>
+      </div>
       {/* <IGGrid /> */}
     </StyledHome>
   )

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../theme';
 
 export const StyledContact = styled.section`
   padding: 1rem;
@@ -6,7 +7,7 @@ export const StyledContact = styled.section`
   width: 100vw;
   height: 100vh;
   a {
-    color: #ffa600;
+    color: ${theme.primaryA};
   }
   .content {
     max-width: 900px;

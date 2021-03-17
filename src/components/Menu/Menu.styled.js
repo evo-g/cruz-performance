@@ -47,8 +47,8 @@ export const StyledMenu = styled.nav`
     margin: 0 auto;
   }
   #menu-logo:hover {
-    transition: color 2s linear;
-    transform: scale(1.05)
+    transition: 0.3s ease all;
+    transform: scale(1.1);
   }
 
   @media ${device.laptopL} {

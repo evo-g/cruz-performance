@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { StyledPricing } from './Pricing.styled';
 import MotorTeardown from '../../images/motor-teardown.png';
 import Motor from '../../images/motor.png';
@@ -7,10 +7,10 @@ import Motor from '../../images/motor.png';
 export default function Pricing() {
   return (
     <StyledPricing>
-      <motion.div
+      <div
         className='content'
-        animate={{ scale: .95 }}
-        transition={{ ease: "easeIn", duration: 2 }}
+        // animate={{ scale: .95 }}
+        // transition={{ ease: "easeIn", duration: 2 }}
       >
         <div className='row'>
           <div className='row-child'>
@@ -40,6 +40,7 @@ export default function Pricing() {
               <li>Struts</li>
               <li>All Fluid Level Checks & Corrections</li>
               <li>Performance installations</li>
+              <li>Exhaust leaks</li>
             </ul>
           </div>
           <div className='row-child'>
@@ -48,7 +49,7 @@ export default function Pricing() {
             <a href="sms:+16194024165">Click here to text us!</a>
           </div>
         </div>
-      </motion.div>
+      </div>
     </StyledPricing>
   );
 };

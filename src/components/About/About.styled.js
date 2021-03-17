@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../../theme';
+import { theme, device } from '../../theme';
 
 export const StyledAbout = styled.section`
   padding: 1rem;
@@ -8,6 +8,9 @@ export const StyledAbout = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  h4,p {
+    color: ${theme.primaryLight};
+  }
   .about-container {
     max-width: 900px;
     margin: 0 auto;
@@ -20,9 +23,6 @@ export const StyledAbout = styled.section`
     padding: 1rem 1rem 2rem;
   }
   .heading {
-    h1 {
-      margin: 0
-    }
     h2 {
       margin-top: 0
     }
@@ -58,11 +58,13 @@ export const StyledAbout = styled.section`
   }
   .insta-logo i:hover {
     border-radius: .5rem;
+    transition: 0.3s ease all;
+    transform: scale(1.1);
   }
   #truck {
-    width: auto;
-    height: auto;
     object-fit: cover;
+    width: inherit;
+    height: inherit;
   }
   @media ${device.mobileL} {
     .about-container {

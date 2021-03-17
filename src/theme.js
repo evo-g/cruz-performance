@@ -28,5 +28,8 @@ export const theme = {
   primaryHover: '#343078',
   primaryMenu: '#A76F3A',
   primaryHeading: '#000000',
+  primaryA: '#0b5ad3',
   mobile: '576px',
 };
+
+// #0b5ad3
