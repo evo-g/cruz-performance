@@ -41,7 +41,7 @@ export const StyledMenu = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12rem;
+    max-width: 12rem;
     margin: 0 auto;
   }
   #menu-logo:hover {

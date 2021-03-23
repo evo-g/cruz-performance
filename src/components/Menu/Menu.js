@@ -12,13 +12,13 @@ const Menu = ({ open, toggleOpen }) => {
           <img id='menu-logo' src={Logo} alt='cruz-logo' />
         </span>
       </Link>
-      <Link to="/contact" onClick={toggleOpen}>
+      <Link to="/contact" onClick={toggleOpen} alt='contact page'>
         Contact
       </Link>
-      <Link to="/pricing" onClick={toggleOpen}>
+      <Link to="/pricing" onClick={toggleOpen} alt='pricing page'>
         Pricing
         </Link>
-      <Link to="/about" onClick={toggleOpen}>
+      <Link to="/about" onClick={toggleOpen} alt='about'>
         About
         </Link>
     </StyledMenu>

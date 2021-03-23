@@ -28,6 +28,20 @@ export const StyledHome = styled.section`
     display: flex;
     flex-direction: row;
     padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  article {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
   }
   .brands {
     padding: 1rem;
@@ -48,10 +62,13 @@ export const StyledHome = styled.section`
   @media ${device.mobileL} {
     .row {
       flex-direction: column;
-
+    }
+    article {
+      max-width: none;
+      width: 100%
     }
     .brands img {
-      max-width: 12rem;
+      max-width: 13rem;
     }
   }
 `;

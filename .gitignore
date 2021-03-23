@@ -40,3 +40,5 @@ lib-cov
 .env.production.local
 
 npm-debug.log*
+
+.parcel-cache
