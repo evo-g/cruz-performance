@@ -23,6 +23,9 @@ export const StyledAbout = styled.section`
     padding: 1rem 1rem 2rem;
   }
   .heading {
+    h1 {
+      margin: 0;
+    }
     h2 {
       margin-top: 0
     }

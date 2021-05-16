@@ -47,4 +47,7 @@ export const GlobalStyles = createGlobalStyle`
   a:visited {
     color: ${({ theme }) => theme.primaryTitle};
   }
+  .content {
+    min-height: 500px;
+  }
 `;

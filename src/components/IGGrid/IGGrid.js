@@ -5,6 +5,27 @@ import axios from 'axios';
 function IGGrid() {
   const [gram, setGram] = useState([]);
 
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://instagram40.p.rapidapi.com/media-info-by-url");
+
+req.query({
+	"url": "https://www.instagram.com/_cruzperformance_/"
+});
+
+req.headers({
+	"x-rapidapi-key": "p81jEDafRdmshGBkSllamxw8YA4Wp1Glqd6jsnjwEfHOYZwvKE",
+	"x-rapidapi-host": "instagram40.p.rapidapi.com",
+	"useQueryString": true
+});
+
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+
   const instagramRegExp = new RegExp(/<script type="text\/javascript">window\._sharedData = (.*);<\/script>/);
 
   const fetchInstagramPhotos = async (accountUrl) => {

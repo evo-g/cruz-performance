@@ -21,6 +21,7 @@ export const StyledHome = styled.section`
     align-items: center;
     h3 {
       text-align: center;
+      font-weight: 800;
       color: ${({ theme }) => theme.primaryHeading};
     }
   }
@@ -30,12 +31,15 @@ export const StyledHome = styled.section`
     padding: 1rem;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
   }
   article {
-    max-width: 45%;
+    max-width: 48%;
+    width: 380px;
+    height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     padding: 1rem;
   }
@@ -44,8 +48,9 @@ export const StyledHome = styled.section`
     padding: 0;
   }
   .brands {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
     display: flex;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
